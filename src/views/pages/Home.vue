@@ -1,0 +1,15 @@
+<template>
+  <div class="container">
+    <div class="container__content">
+      <h1>Hello, world!</h1>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Home",
+};
+</script>
+
+<style lang="scss" scoped></style>
