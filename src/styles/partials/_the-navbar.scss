@@ -5,14 +5,20 @@
   align-items: center;
   justify-content: space-between;
 
+  @include md() {
+    padding: 8px 1rem;
+  }
+
   &__logo {
     color: #333;
     font-size: 28px;
     margin: 0 10px 0 0;
+    cursor: pointer;
   }
 
   &__login {
     border: none;
+    cursor: pointer;
     background: transparent;
     border-radius: 50%;
     img {
