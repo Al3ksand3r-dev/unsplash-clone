@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  background: no-repeat center center/cover;
+
+  &__content {
+    margin: auto;
+    padding: 20px 10px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(#000, 0.3);
+
+    h1 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      padding: 10px 0;
+    }
+  }
+}

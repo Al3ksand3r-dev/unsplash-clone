@@ -1,13 +1,18 @@
 <template>
-  <div>
-    <router-view />
+  <div class="container">
+    <the-navbar />
+    <div class="container__content">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
+import TheNavbar from "./components/layout/TheNavbar.vue";
 export default {
   name: "App",
+  components: {
+    TheNavbar,
+  },
 };
 </script>
-
-<style lang="scss" scoped></style>

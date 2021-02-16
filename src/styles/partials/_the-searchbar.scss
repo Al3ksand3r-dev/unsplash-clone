@@ -1,0 +1,38 @@
+.form {
+  margin: auto;
+  width: 73%;
+  position: relative;
+
+  &__text-field {
+    width: 100%;
+    height: 100%;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #eee;
+    background: #eee;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+
+    &:focus {
+      background: #fff;
+      border-color: #ccc;
+    }
+  }
+
+  &__submit {
+    top: 50%;
+    left: 15px;
+    position: absolute;
+    transform: translate(0, -50%);
+    background: transparent;
+    border: none;
+  }
+
+  &__magnifier {
+    font-size: 16px;
+    color: #333;
+  }
+}
