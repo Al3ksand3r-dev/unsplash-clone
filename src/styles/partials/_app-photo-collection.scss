@@ -3,6 +3,12 @@
   gap: 2rem 0;
   padding: 4rem 0;
 
+  &__title {
+    font-size: 33px;
+    padding: 0 0 20px 10px;
+    text-transform: capitalize;
+  }
+
   &__user-description {
     display: flex;
     align-items: center;

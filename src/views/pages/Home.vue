@@ -16,17 +16,15 @@
 <script>
 import AppPhotoCollection from "../../components/layout/AppPhotoCollection.vue";
 import store from "@/store";
-import { ref } from "vue";
+import { computed } from "vue";
 import AppHeader from "../../components/layout/AppHeader.vue";
 
 export default {
   components: { AppPhotoCollection, AppHeader },
   name: "Home",
   setup() {
-    const photos = ref([]);
-    store.dispatch("getPhotos").then(() => {
-      photos.value = store.state.photos;
-    });
+    store.dispatch("getPhotos");
+    const photos = computed(() => store.state.photos);
     return { photos };
   },
 };

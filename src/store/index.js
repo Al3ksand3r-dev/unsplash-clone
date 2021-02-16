@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { getPhotos } from "@/service";
+import { getPhotos, searchPhoto } from "@/service";
 
 export default createStore({
   state: {
@@ -15,6 +15,11 @@ export default createStore({
     getPhotos({ commit }) {
       return getPhotos().then(({ data }) => {
         commit("SET_PHOTOS", data);
+      });
+    },
+    searchPhoto({ commit }, keyword) {
+      return searchPhoto(keyword).then(({ data }) => {
+        commit("SET_PHOTOS", data.results);
       });
     },
   },

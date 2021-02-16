@@ -10,3 +10,7 @@ const client = axios.create({
 export const getPhotos = () => {
   return client.get("/photos");
 };
+
+export const searchPhoto = (keyword) => {
+  return client.get(`/search/photos/?page=1&query=${keyword}`);
+};

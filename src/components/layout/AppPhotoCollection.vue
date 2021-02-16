@@ -1,5 +1,8 @@
 <template>
   <article class="collection">
+    <h1 class="collection__title" v-if="$route.params.query">
+      {{ $route.params.query }}
+    </h1>
     <div class="collection__item" v-for="photo in photos" :key="photo.id">
       <div class="collection__user-description">
         <img
